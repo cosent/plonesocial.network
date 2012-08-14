@@ -1,8 +1,7 @@
 Changelog
 =========
 
-0.4dev (unreleased)
--------------------
+0.4 (unreleased)
+----------------
 
-- Package created using zopeskel
-  [Guido Stevens]
+- core follow/unfollow social graph API
