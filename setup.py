@@ -15,13 +15,12 @@ long_description = (
 
 setup(name='plonesocial.network',
       version=version,
-      description="Personal profile + follow/unfollow functionality for the Plonesocial suite",
+      description="Personal profile + follow/unfollow functionality "
+      "for the Plonesocial suite",
       long_description=long_description,
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
-      classifiers=[
-        "Programming Language :: Python",
-        ],
+      classifiers=["Programming Language :: Python", ],
       keywords='plone, zope, socbiz, plonesocial',
       author='Guido Stevens',
       author_email='guido.stevens@cosent.net',
@@ -33,6 +32,7 @@ setup(name='plonesocial.network',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'collective.monkeypatcher',
           # -*- Extra requirements: -*-
       ],
       extras_require={'test': ['plone.app.testing']},
