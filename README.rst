@@ -22,6 +22,12 @@ status
 
 Development.
 
+bugs
+----
+
+Uninstalling plonesocial.microblog also removes the plonesocial_network tool.
+Uninstalling plonesocial.network removes plonesocial_network but leaves plonesocial_microblog tool well alone.
+
 
 Plonesocial
 ===========
