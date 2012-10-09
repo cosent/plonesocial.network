@@ -1,6 +1,15 @@
 Changelog
 =========
 
+0.4.1 (2012-10-09)
+----------------
+
+* oops. merge. [gyst]
+* ignore dist [gyst]
+* small fixes [gyst]
+* fix inline form submission handling [gyst]
+* add profile navigation [gyst]
+
 0.4 (2012-10-09)
 ----------------
 
