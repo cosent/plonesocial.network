@@ -1,5 +1,3 @@
-.. contents::
-
 Introduction
 ============
 
@@ -13,50 +11,28 @@ If you're an end-user looking for a pre-integrated solution, you should install 
 plonesocial.network
 ===================
 
-Plonesocial.network provides a follow/unfollow functionality.
+Plonesocial.network provides user profiles with follow/unfollow functionality.
+It intercepts and overrides the default Plone ``author.cpt`` profile page.
+If `plonesocial.activitystream`_ is installed, it will show status updates on the profile page.
+
+Additionally, plonesocial.network provides ``@@following`` and ``@@followers`` views
+that enable exploration of the social graph.
+
+Core rendering logic is factored into two content providers, ``maxiprofile_provider``
+and ``miniprofile_provider``. This enables and promotes code re-use across different views.
+
+All browser views are anchored on the Site Root, so technically there's no user context
+in the form of a Member folder required.
 
 For a full social networking stack, install `plonesocial.suite`_.
-
-status
-------
-
-Development.
 
 bugs
 ----
 
-Uninstalling plonesocial.microblog also removes the plonesocial_network tool.
-Uninstalling plonesocial.network removes plonesocial_network but leaves plonesocial_microblog tool well alone.
-
-
-Plonesocial
-===========
-
-Plonesocial consists of:
-
-`plonesocial.suite`_
- An out-of-the-box social business experience integrating all plonesocial.* packages.
- If you're an end user, this is what you're looking for.
-
-`plonesocial.microblog`_
- Status updates
-
-`plonesocial.activitystream`_
- Lists content changes, discussion replies, and status updates
-
-`plonesocial.network`_
- Follow/unfollow of users
-
-plonesocial.like
- Favoriting of content
-
-`plonesocial.buildout`_
- Developer buildout. Not a Python package. Intended for Plonesocial developers only.
+Uninstalling either `plonesocial.microblog`_ or plonesocial_network removes both utilities, deleting all data.
 
 .. _plonesocial suite: https://github.com/cosent/plonesocial.suite
-.. _plonesocial.network: https://github.com/cosent/plonesocial.network
 .. _plonesocial.microblog: https://github.com/cosent/plonesocial.microblog
 .. _plonesocial.activitystream: https://github.com/cosent/plonesocial.activitystream
 .. _plonesocial.suite: https://github.com/cosent/plonesocial.suite
-.. _plonesocial.buildout: https://github.com/cosent/plonesocial.buildout
 

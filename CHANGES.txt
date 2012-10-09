@@ -1,7 +1,33 @@
 Changelog
 =========
 
-0.4 (unreleased)
+0.4 (2012-10-09)
 ----------------
 
-- core follow/unfollow social graph API
+Initial release.
+
+* update docs [gyst]
+* fix dependency [gyst]
+* reindent for better pep8 [gyst]
+* finish following/followers views [gyst]
+* extract maxiprofile provider [gyst]
+* base skel for following/followers view [gyst]
+* provide clear [gyst]
+* more styling [gyst]
+* intercept /author and redirect to /@@profile [gyst]
+* follow/unfollow buttons [gyst]
+* s/followees/following/ [gyst]
+* document weird uninstall behaviour [gyst]
+* show plonesocial.activitystream, if installed [gyst]
+* provide consistency with plonesocial.activitystream [gyst]
+* GS name [gyst]
+* base profile [gyst]
+* a monkey that works, thx enfold [gyst]
+* monkeypatch image sizes -- doesnt work :-( [gyst]
+* fix setup.py [gyst]
+* base skel for traversable profile view [gyst]
+* doc [gyst]
+* core follow/unfollow social graph API [gyst]
+* provide noop tool install [gyst]
+* remove src indirection [gyst]
+* initial checkin from zopeskel [gyst]
