@@ -32,6 +32,7 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=['setuptools',
+                      'Plone',
                       # -*- Extra requirements: -*-
                       ],
     extras_require={'test': ['plone.app.testing']},
