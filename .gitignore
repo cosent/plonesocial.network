@@ -1,1 +1,14 @@
-dist
+*.egg-info
+*.mo
+*.pyc
+*~
+.installed.cfg
+bin/
+coverage/
+develop-eggs/
+downloads/
+eggs/
+include/
+lib/
+parts/
+var/
