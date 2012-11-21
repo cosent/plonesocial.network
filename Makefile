@@ -1,7 +1,6 @@
 # convenience makefile to boostrap & run buildout
 # use `make options=-v` to run buildout with extra options
 
-pep8_ignores = E501
 options = -N -q -t 3
 
 prerequisites:
@@ -15,4 +14,4 @@ install: prerequisites
 tests:
 	bin/test
 	pyflakes plonesocial/
-	pep8 --ignore=$(pep8_ignores) plonesocial/
+	pep8 plonesocial/
