@@ -1,11 +1,26 @@
 Changelog
 =========
 
-0.4.1 (unreleased)
+0.4.2 (2012-11-26)
 ------------------
 
-* Added Spanish translation. [macagua]
-* Added improvements about i18n support. [macagua]
+* update changelog, release [gyst]
+* provide a virtualenv-enabled Travis buildout that can be debugged on a dev box [gyst]
+* pep8 fixes [gyst]
+* Updated Spanish l10n and Master manual template [macagua]
+* Added locales and i18n extract script [macagua]
+* Added more improvements about i18n support [macagua]
+* Updated contributors file [macagua]
+* Updated changelog [macagua]
+* fix pyflakes by moving monkey into __init__ [gyst]
+* ignore dist [gyst]
+* pep8/pyflakes [hvelarde]
+* update Travis CI configuration to include pep8/pyflakes testing [hvelarde]
+* update location of extended configuration as the plonetest repo was moved to GitHub [hvelarde]
+* update list of ignored objects [hvelarde]
+* cleanup, bump version [gyst]
+* add Travis CI configuration [hvelarde]
+* fix rst formatting [gyst]
 
 0.4.1 (2012-10-09)
 ------------------
