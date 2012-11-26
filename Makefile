@@ -1,17 +1,22 @@
-# convenience makefile to boostrap & run buildout
-# use `make options=-v` to run buildout with extra options
+default: buildout test
 
-options = -N -q -t 3
+buildout: bin/buildout buildout-cache/downloads
+	bin/buildout -c buildout.cfg -N -t 3
 
-prerequisites:
-	sudo apt-get install -qq pep8 pyflakes
-	mkdir -p buildout-cache/downloads
-
-install: prerequisites
-	python bootstrap.py -c travis.cfg
-	bin/buildout -c travis.cfg $(options)
-
-tests:
+test:
 	bin/test
-	pyflakes plonesocial/
-	pep8 plonesocial/
+	bin/flake8 plonesocial
+
+bin/buildout: bin/python
+	bin/easy_install zc.buildout==1.6.3
+	bin/easy_install distribute==0.6.28
+
+bin/python:
+	virtualenv --clear --no-site-packages --distribute .
+
+buildout-cache/downloads:
+	[ -d buildout-cache ] || mkdir -p buildout-cache/downloads
+
+clean:
+	rm -rf bin/* .installed.cfg parts/download
+
