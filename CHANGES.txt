@@ -4,6 +4,8 @@ Changelog
 0.4.2 (2012-11-26)
 ------------------
 
+* add Dutch translation [maartenkling]
+* translate follow/unfollow buttons [maartenkling]
 * update changelog, release [gyst]
 * provide a virtualenv-enabled Travis buildout that can be debugged on a dev box [gyst]
 * pep8 fixes [gyst]
