@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = '0.4.2'
+version = '0.4.3'
 
 long_description = (
     open('README.rst').read()
@@ -38,6 +38,6 @@ setup(
     extras_require={'test': ['plone.app.testing']},
     entry_points="""
       # -*- Entry points: -*-
-  	  [z3c.autoinclude.plugin]
-  	  target = plone
+          [z3c.autoinclude.plugin]
+          target = plone
       """,)
