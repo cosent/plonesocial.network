@@ -10,6 +10,16 @@ This package provides a building block for Plone integrators who want to create 
 
 If you're an end-user looking for a pre-integrated solution, you should install `plonesocial.suite`_ instead.
 
+Credits
+-------
+
+|Cosent|_
+
+This package is maintained by Cosent_.
+
+.. _Cosent: http://cosent.nl
+.. |Cosent| image:: http://cosent.nl/images/logo-external.png 
+                    :alt: Cosent
 
 plonesocial.network
 ===================
