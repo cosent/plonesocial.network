@@ -20,6 +20,15 @@
       i18n:attributes="title; description"
       />
 
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="PloneSocial Network: uninstall"
+      directory="profiles/uninstall"
+      description="Installs the plonesocial.network package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      i18n:attributes="title; description"
+      />
+
   <!-- skins for overrides -->
   <cmf:registerDirectory name="plonesocial.network" />
 
