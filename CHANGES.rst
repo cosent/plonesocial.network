@@ -4,6 +4,8 @@ Changelog
 0.5.3 (unreleased)
 ------------------
 
+* Bind browserviews to INavigationRoot instead of ISiteRoot [gyst]
+
 * Package distribution was fixed by adding classifiers, dependencies and
   fixing license version number as GPLv2; a MANIFEST.in file was also added.
   [hvelarde]
