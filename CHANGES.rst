@@ -1,7 +1,12 @@
 Changelog
 =========
 
-0.5.3 (2014-03-11)
+0.6.1 (2014-03-11)
+------------------
+
+* Reflect changed version in changelog [gyst]
+
+0.6.0 (2014-03-11)
 ------------------
 
 * Bind browserviews to INavigationRoot instead of ISiteRoot [gyst]
@@ -12,6 +17,13 @@ Changelog
 
 * Brazilian Portuguese translation was added.
   [hvelarde]
+
+* enrich CSS markup [Guido A.J. Stevens]
+
+* bump version [Guido A.J. Stevens]
+
+* make sure only the right subunsub form is processed, fixes #7 [Guido A.J. Stevens]
+
 
 0.5.2 (2013-07-31)
 ------------------
