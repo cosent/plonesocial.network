@@ -1,6 +1,16 @@
 Changelog
 =========
 
+0.7.0 (unreleased)
+------------------
+
+* add plonesocial.core dependency [Guido A.J. Stevens]
+
+* Add more basic installation/uninstallation tests [hvelarde]
+
+* Add test to demonstrate INetworkTool has been uninstalled (closes #4) [hvelarde]
+
+
 0.6.1 (2014-03-11)
 ------------------
 
