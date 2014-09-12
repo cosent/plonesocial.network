@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = '0.6.1'
+version = '0.7.0.dev'
 
 long_description = (
     open('README.rst').read()
@@ -38,6 +38,7 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
+        'plonesocial.core',
         'plone.app.layout',
         'Products.CMFCore',
         'Products.CMFPlone >=4.2',
