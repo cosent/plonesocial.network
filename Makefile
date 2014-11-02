@@ -1,13 +1,13 @@
 default: buildout test
 
-buildout: bin/buildout buildout-cache/downloads
+buildout: bin/buildout
 	bin/buildout -c buildout.cfg -N -t 3
 
 test:
 	bin/test
 	bin/flake8 plonesocial
 
-bin/buildout: bin/python
+bin/buildout: bin/python buildout-cache/downloads
 	bin/python bootstrap.py
 
 bin/python:
