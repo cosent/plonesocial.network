@@ -8,7 +8,7 @@ test:
 	bin/flake8 plonesocial
 
 bin/buildout: bin/python buildout-cache/downloads
-	bin/python bootstrap.py -v 2.2.1
+	bin/python bootstrap.py
 
 bin/python:
 	virtualenv --clear --no-site-packages --setuptools --python=python2.7 .
