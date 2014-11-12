@@ -3,6 +3,9 @@ default: buildout test
 buildout: bin/buildout
 	bin/buildout -c buildout.cfg -N -t 3
 
+travis: bin/buildout
+	bin/buildout -c travis.cfg -N -t 10
+
 test:
 	bin/test
 	bin/flake8 plonesocial
