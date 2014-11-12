@@ -1,3 +1,8 @@
+exclude .travis.yml
+exclude bootstrap.py
+exclude buildout.cfg
+exclude Makefile
+exclude travis.cfg
 graft docs
 graft plonesocial
 include *.rst
