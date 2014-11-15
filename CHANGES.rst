@@ -4,6 +4,10 @@ Changelog
 0.7.0 (unreleased)
 ------------------
 
+* Uninstall profile [ale-rt, fulv]
+
+* Plone 5.0a3 porting [ale-rt, fulv, reinhardt]
+
 * add plonesocial.core dependency [Guido A.J. Stevens]
 
 * Add more basic installation/uninstallation tests [hvelarde]
