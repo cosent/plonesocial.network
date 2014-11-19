@@ -4,7 +4,7 @@ buildout: bin/buildout buildout-cache/downloads
 	bin/buildout -c buildout.cfg -N -t 3
 
 test:
-	bin/test
+	bin/test plonesocial.network
 	bin/flake8 plonesocial
 
 bin/buildout: bin/python
