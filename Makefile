@@ -1,18 +1,20 @@
 default: buildout test
 
-buildout: bin/buildout buildout-cache/downloads
+buildout: bin/buildout
 	bin/buildout -c buildout.cfg -N -t 3
+
+travis: bin/buildout
+	bin/buildout -c travis.cfg -N -t 10
 
 test:
 	bin/test
 	bin/flake8 plonesocial
 
-bin/buildout: bin/python
-	bin/easy_install zc.buildout==1.7.1
-	bin/easy_install distribute==0.6.28
+bin/buildout: bin/python buildout-cache/downloads
+	bin/python bootstrap.py -v 2.2.1
 
 bin/python:
-	virtualenv --clear --no-site-packages --distribute .
+	virtualenv --clear --no-site-packages --setuptools --python=python2.7 .
 
 buildout-cache/downloads:
 	[ -d buildout-cache ] || mkdir -p buildout-cache/downloads
