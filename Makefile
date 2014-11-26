@@ -7,7 +7,7 @@ travis: bin/buildout
 	bin/buildout -c travis.cfg -N -t 10
 
 test:
-	bin/test
+	bin/test plonesocial.network
 	bin/flake8 plonesocial
 
 bin/buildout: bin/python buildout-cache/downloads
