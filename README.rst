@@ -1,6 +1,3 @@
-.. image:: https://secure.travis-ci.org/cosent/plonesocial.network.png
-    :target: http://travis-ci.org/cosent/plonesocial.network
-
 Introduction
 ============
 
@@ -38,6 +35,28 @@ All browser views are anchored on the Site Root, so technically there's no user 
 in the form of a Member folder required.
 
 For a full social networking stack, install `plonesocial.suite`_.
+
+Build status
+------------
+
+Unit tests
+~~~~~~~~~~
+
+.. image:: https://secure.travis-ci.org/cosent/plonesocial.network.png
+    :target: http://travis-ci.org/cosent/plonesocial.network
+.. image:: http://jenkins.ploneintranet.net/buildStatus/icon?job=Plone%20Social%20Network
+    :target: http://jenkins.ploneintranet.net/job/Plone%20Social%20Network/
+
+Robot tests for Plone Social and Plone Intranet
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: http://jenkins.ploneintranet.net/buildStatus/icon?job=Plone%20Social%20Suite
+   :target: http://jenkins.ploneintranet.net/job/Plone%20Social%20Suite%20Master/badge/
+
+.. image:: http://jenkins.ploneintranet.net/buildStatus/icon?job=Plone%20Intranet%20Suite%20Master
+   :target: http://jenkins.ploneintranet.net/job/Plone%20Intranet%20Suite%20Master/badge/
+
+
 
 bugs
 ----
