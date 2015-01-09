@@ -40,6 +40,7 @@ setup(
     install_requires=[
         'plonesocial.core',
         'plone.app.layout',
+        'plone.api',
         'Products.CMFCore',
         'Products.CMFPlone >=4.2',
         'Products.GenericSetup',
@@ -50,8 +51,8 @@ setup(
     ],
     extras_require={
         'test': [
-            'plone.api',
             'plone.app.testing',
+            'plone.app.contenttypes[test]',
             'plone.browserlayer',
             'unittest2',
         ],
