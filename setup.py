@@ -55,6 +55,8 @@ setup(
             'plone.app.contenttypes[test]',
             'plone.browserlayer',
             'unittest2',
+            'plonesocial.microblog',
+            'plone.app.discussion',
         ],
     },
     entry_points="""
