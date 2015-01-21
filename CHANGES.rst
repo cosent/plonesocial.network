@@ -16,6 +16,8 @@ Changelog
 
 * Add test to demonstrate INetworkTool has been uninstalled (closes #4) [hvelarde]
 
+* 'Like' functionality [pbauer, reinhardt]
+
 
 0.6.1 (2014-03-11)
 ------------------
