@@ -7,8 +7,8 @@ travis: bin/buildout
 	bin/buildout -c travis.cfg -N -t 10
 
 test:
-	bin/test plonesocial.network
-	bin/flake8 plonesocial
+	bin/test ploneintranet.network
+	bin/flake8 ploneintranet
 
 bin/buildout: bin/python buildout-cache/downloads
 	bin/python bootstrap.py -v 2.2.1

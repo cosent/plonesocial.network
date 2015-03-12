@@ -4,5 +4,5 @@ exclude buildout.cfg
 exclude Makefile
 exclude travis.cfg
 graft docs
-graft plonesocial
+graft ploneintranet
 include *.rst

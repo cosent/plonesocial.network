@@ -10,7 +10,7 @@ Changelog
 
 * Plone 5.0a3 porting [ale-rt, fulv, reinhardt]
 
-* add plonesocial.core dependency [Guido A.J. Stevens]
+* add ploneintranet.core dependency [Guido A.J. Stevens]
 
 * Add more basic installation/uninstallation tests [hvelarde]
 
@@ -104,8 +104,8 @@ Initial release.
 * follow/unfollow buttons [gyst]
 * s/followees/following/ [gyst]
 * document weird uninstall behaviour [gyst]
-* show plonesocial.activitystream, if installed [gyst]
-* provide consistency with plonesocial.activitystream [gyst]
+* show ploneintranet.activitystream, if installed [gyst]
+* provide consistency with ploneintranet.activitystream [gyst]
 * GS name [gyst]
 * base profile [gyst]
 * a monkey that works, thx enfold [gyst]

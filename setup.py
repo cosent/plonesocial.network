@@ -11,7 +11,7 @@ long_description = (
     + '\n')
 
 setup(
-    name='plonesocial.network',
+    name='ploneintranet.network',
     version=version,
     description="Personal profile + follow/unfollow functionality "
     "for the Plonesocial suite",
@@ -29,16 +29,16 @@ setup(
         'Programming Language :: Python',
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
-    keywords='plone, zope, socbiz, plonesocial',
+    keywords='plone, zope, socbiz, ploneintranet',
     author='Guido Stevens',
     author_email='guido.stevens@cosent.net',
-    url='http://github.com/cosent/plonesocial.network',
+    url='http://github.com/cosent/ploneintranet.network',
     packages=find_packages(exclude=['ez_setup']),
-    namespace_packages=['plonesocial'],
+    namespace_packages=['ploneintranet'],
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'plonesocial.core',
+        'ploneintranet.core',
         'plone.app.layout',
         'plone.api',
         'Products.CMFCore',
@@ -55,7 +55,7 @@ setup(
             'plone.app.contenttypes[test]',
             'plone.browserlayer',
             'unittest2',
-            'plonesocial.microblog',
+            'ploneintranet.microblog',
             'plone.app.discussion',
         ],
     },
