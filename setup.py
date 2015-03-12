@@ -33,8 +33,7 @@ setup(
     author='Guido Stevens',
     author_email='guido.stevens@cosent.net',
     url='http://github.com/cosent/ploneintranet.network',
-    packages=find_packages(exclude=['ez_setup']),
-    namespace_packages=['ploneintranet'],
+    packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
     install_requires=[
