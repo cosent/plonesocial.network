@@ -1,93 +1,31 @@
-Introduction
-============
+Deprecated
+==========
 
-Plonesocial.network is part of the `plonesocial suite`_.
+The plonesocial.* group of packages has become ploneintranet_.
 
-This package provides a building block for Plone integrators who want to create a custom social business solution in Plone.
+Plone Intranet features a complete redesign and re-implementation of the
+front-end user interface of plonesocial. The backend is largely unchanged
+but extended with new features: liking updates, personalized tagging.
 
-If you're an end-user looking for a pre-integrated solution, you should install `plonesocial.suite`_ instead.
-
-Credits
--------
+Work on the ploneintranet `code base`_ is sponsored by the
+`Plone Intranet Consortium`_, a group of companies dedicated to delivering
+the leading open source digital workplace platform, based on Plone.
+Have a look, you'll like it. It's 100% open source.
 
 |Cosent|_
 
-This package is maintained by Cosent_.
+Plonesocial and Plone Intranet are initiatives by Cosent_.
 
+This repository is maintained frozen for developers who have made forks
+for use in their own projects. If you're one of those developers and are
+interested in upgrading to Plone Intranet, please contact Cosent_.
+
+Please note that commits after August 2014 are part of the ploneintranet
+rewrite, before plonesocial.* got merged into ploneintranet.*.
+
+.. _ploneintranet: https://github.com/ploneintranet/ploneintranet
+.. _code base: https://github.com/ploneintranet/ploneintranet
+.. _Plone Intranet Consortium: http://ploneintranet.com
 .. _Cosent: http://cosent.nl
 .. |Cosent| image:: http://cosent.nl/images/logo-external.png 
                     :alt: Cosent
-
-plonesocial.network
-===================
-
-Plonesocial.network provides user profiles with follow/unfollow functionality.
-It intercepts and overrides the default Plone ``author.cpt`` profile page.
-If `plonesocial.activitystream`_ is installed, it will show status updates on the profile page.
-
-Additionally, plonesocial.network provides ``@@following`` and ``@@followers`` views
-that enable exploration of the social graph.
-
-Core rendering logic is factored into two content providers, ``maxiprofile_provider``
-and ``miniprofile_provider``. This enables and promotes code re-use across different views.
-
-All browser views are anchored on the Site Root, so technically there's no user context
-in the form of a Member folder required.
-
-For a full social networking stack, install `plonesocial.suite`_.
-
-Build status
-------------
-
-Unit tests
-~~~~~~~~~~
-
-.. image:: https://secure.travis-ci.org/cosent/plonesocial.network.png
-    :target: http://travis-ci.org/cosent/plonesocial.network
-.. image:: http://jenkins.ploneintranet.net/buildStatus/icon?job=Plone%20Social%20Network
-    :target: http://jenkins.ploneintranet.net/job/Plone%20Social%20Network/
-
-Robot tests for Plone Social and Plone Intranet
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. image:: http://jenkins.ploneintranet.net/buildStatus/icon?job=Plone%20Social%20Suite
-   :target: http://jenkins.ploneintranet.net/job/Plone%20Social%20Suite%20Master/badge/
-
-.. image:: http://jenkins.ploneintranet.net/buildStatus/icon?job=Plone%20Intranet%20Suite%20Master
-   :target: http://jenkins.ploneintranet.net/job/Plone%20Intranet%20Suite%20Master/badge/
-
-
-
-bugs
-----
-
-Uninstalling either `plonesocial.microblog`_ or plonesocial_network removes both utilities, deleting all data.
-
-Roadmap
--------
-
-An extensive roadmap_ for the plonesocial suite is available on github.
-
-.. _plonesocial suite: https://github.com/cosent/plonesocial.suite
-.. _plonesocial.microblog: https://github.com/cosent/plonesocial.microblog
-.. _plonesocial.activitystream: https://github.com/cosent/plonesocial.activitystream
-.. _plonesocial.suite: https://github.com/cosent/plonesocial.suite
-.. _roadmap: https://github.com/cosent/plonesocial.suite/wiki
-
-
-Copyright (c) Plone Foundation
-------------------------------
-
-This package is Copyright (c) Plone Foundation.
-
-Any contribution to this package implies consent and intent to irrevocably transfer all 
-copyrights on the code you contribute, to the `Plone Foundation`_, 
-under the condition that the code remains under a `OSI-approved license`_.
-
-To contribute, you need to have signed a Plone Foundation `contributor agreement`_.
-If you're `listed on Github`_ as a member of the Plone organization, you already signed.
-
-.. _Plone Foundation: https://plone.org/foundation
-.. _OSI-approved license: http://opensource.org/licenses
-.. _contributor agreement: https://plone.org/foundation/contributors-agreement
-.. _listed on Github: https://github.com/orgs/plone/people
